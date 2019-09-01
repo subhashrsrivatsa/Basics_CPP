@@ -43,11 +43,24 @@ void Characters()
 	}
 }
 
+double Area_Circle()
+{
+	double r = 5;
+	cout << "\nThe AREA of the circle for radius of "<<r<<" is : "<< 3.14*r*r;
+	return 0;
+}
+
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	display();
+	cout<<"\n-----------------*******-----------------";
 	Calculator();
+	cout<<"\n-----------------*******-----------------";
 	Sizes();
+	cout<<"\n-----------------*******-----------------";
 	Characters();
+	cout<<"\n-----------------*******-----------------";
+	Area_Circle();
+	cout<<"\n-----------------*******-----------------";
 	return 0;
 }
