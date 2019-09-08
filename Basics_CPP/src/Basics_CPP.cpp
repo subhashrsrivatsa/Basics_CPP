@@ -57,13 +57,13 @@ double greatest()
 	int a,b;
 	cin>>a>>b;
 	if(a>b){
-		cout<<a<<" is the greatest number";
+		cout<<a<<" is the greatest number\n";
 	}
 	else if (a==b) {
-		cout<<a<<" and "<<b<<" are equal";
+		cout<<a<<" and "<<b<<" are equal\n";
 	}
 	else {
-		cout<<b<<" is the greatest number";
+		cout<<b<<" is the greatest number\n";
 	}
 	return 0;
 }
@@ -77,16 +77,33 @@ void studentGrade()
 	switch(ch)
 	{
 	case 'A':cout<<"\nCongrats....!!! You are among the toppers";
-				exit(0);
+				break;
 	case 'B':cout<<"\nOK...!!! Satisfactory";
-				exit(0);
+				break;
 	case 'C':cout<<"\nTime to Improve";
-				exit(0);
+				break;
 	case 'D':cout<<"\nYou have just escaped";
-				exit(0);
+				break;
 	default :cout<<"SORRY... Try next time";
 				exit(0);
 	}
+}
+void sumnavgint()
+{
+	int n,a[100],sum=0;
+	cout<<"Enter the total numbers of your choice\n";
+	cin>>n;
+	cout<<"Enter the numbers\n";
+	for(int i =0;i<n;i++)
+	{
+		cin>>a[i];
+	}
+	for(int i =0;i<n;i++)
+	{
+		sum+=a[i];
+	}
+	cout<<"\nThe SUM of the numbers is : "<<sum;
+	cout<<"\nThe AVERAGE of the numbers is : "<<(sum/n);
 }
 
 
@@ -125,12 +142,18 @@ int main() {
 		n++;
 		cout<<n<<"\n";
 	}
-	while(n<=3);
-	cout<<"-----------------*******-----------------";
+	while(n<=5);
+	cout<<"\n-----------------*******-----------------";
 	cout<<"\n Greatest of 2 Numbers using IF-ELSE loop\n";
 	greatest();
-	cout<<"-----------------*******-----------------";
+	cout<<"\n-----------------*******-----------------";
+	cout<<"\n C++ function to demonstrate SUM and AVG cases\n";
+	sumnavgint();
+	cout<<"\n-----------------*******-----------------";
 	cout<<"\n C++ function to demonstrate SWITCH cases\n";
 	studentGrade();
+	cout<<"\n-----------------*******-----------------";
+	cout<<"\n-----------------*******-----------------";
+
 	return 0;
 }
