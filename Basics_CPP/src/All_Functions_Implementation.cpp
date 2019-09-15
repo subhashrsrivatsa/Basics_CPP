@@ -5,6 +5,7 @@
  *      Author: chinni
  */
 #include <iostream>
+#include <string>
 
 #include "All_Functions_Definition.hpp"
 
@@ -135,4 +136,77 @@ void swap_ref(int &x, int &y)
    y = temp; /* put x into y */
 
    return;
+}
+
+void matrix_addition()
+{
+	int a[3][3]={1,2,3,4,5,6,7,8,9};
+	int b[3][3]={9,8,7,6,5,4,3,2,1};
+	int i,j,t[3][3];
+	cout<<"The elements of matrix A are :\n";
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<a[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+	cout<<"The elements of matrix B are :\n";
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<b[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			t[i][j]=a[i][j]+b[i][j];
+		}
+		cout<<"\n";
+	}
+	cout<<"The SUM of Matrices A and B are : \n";
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<t[i][j]<<"\t";
+		}
+		cout<<"\n";
+	}
+}
+
+void string_demo()
+{
+	string str1 = "Sophia";
+	string str2 = "Antipolis";
+	string str3;
+	string tmp;
+
+	cout<<"String 1 : "<<str1<<endl;
+	cout<<"String 2 : "<<str2;
+
+	if(str1==str2)
+	{
+		cout<<"\nThe strings are EQUAL\n";
+	}
+	else
+	{
+		cout<<"\nThe strings are NOT-EQUAL\n";
+	}
+
+	cout<<"\nNumber of characters in string 1 is "<<str1.length();
+	cout<<"\nNumber of characters in string 1 is "<<str2.length();
+
+	str3 = str1+str2;
+	cout<<"\nConcatenation of Strings are : "<<str3<<" and its length is : "<<str3.length();
+
+	tmp=str3.substr(0,5);
+	cout<<"\nSubstring of "<<str3<<" is : "<<tmp;
+
+
 }

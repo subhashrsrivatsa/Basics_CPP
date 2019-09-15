@@ -19,5 +19,7 @@ void sumnavgint();
 void swap_val(int a, int b);
 void swap_ptr(int *a,int *b);
 void swap_ref(int &x, int &y);
+void matrix_addition();
+void string_demo();
 
 #endif /* ALL_FUNCTIONS_DEFINITION_HPP_ */

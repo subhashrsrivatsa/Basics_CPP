@@ -70,7 +70,11 @@ int main() {
 	swap_ref(a, b);
 	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
 	cout<<"\n-----------------*******-----------------";
-
+	cout<<"\nARRAYS in C++:";
+	matrix_addition();
+	cout<<"\n-----------------*******-----------------";
+	cout<<"\nDemonstration of C++ Strings\n";
+	string_demo();
 
 	return 0;
 }
