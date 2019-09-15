@@ -5,7 +5,8 @@
  *      Author: chinni
  */
 #include <iostream>
-#include <string>
+#include <string.h>
+#include <cstring>
 
 #include "All_Functions_Definition.hpp"
 
@@ -184,8 +185,7 @@ void string_demo()
 {
 	string str1 = "Sophia";
 	string str2 = "Antipolis";
-	string str3;
-	string tmp;
+	string str3, tmp, tmp1;
 
 	cout<<"String 1 : "<<str1<<endl;
 	cout<<"String 2 : "<<str2;
@@ -208,5 +208,10 @@ void string_demo()
 	tmp=str3.substr(0,5);
 	cout<<"\nSubstring of "<<str3<<" is : "<<tmp;
 
+	char src[20] = "Hello Nice";
+	char dest[20];
+	cout<<"\nSource string : "<<src;
+	strcpy(dest,src);
+	cout<<"\nDestination String : "<<dest;
 
 }
