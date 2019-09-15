@@ -64,6 +64,11 @@ int main() {
 	cout<<"\n C++ function to demonstrate SWITCH cases\n";
 	studentGrade();
 	cout<<"\n-----------------*******-----------------";
+	cout<<"\n C++ function to demonstrate Pass by Value function\n";
+	int a=10, b=20;
+	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
+	swap_val(a,b);
+	cout<<"\n-----------------*******-----------------";
 
 	return 0;
 }

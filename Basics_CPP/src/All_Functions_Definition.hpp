@@ -16,6 +16,7 @@ double Area_Circle();
 double greatest();
 void studentGrade();
 void sumnavgint();
+void swap_val(int a, int b);
 
 
 

@@ -108,3 +108,12 @@ void sumnavgint()
 	cout<<"\nThe AVERAGE of the numbers is : "<<(sum/n);
 }
 
+void swap_val(int a, int b)
+{
+	int t;
+	t=a;
+	a=b;
+	b=t;
+	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
+}
+
