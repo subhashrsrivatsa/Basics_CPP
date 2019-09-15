@@ -110,6 +110,7 @@ void sumnavgint()
 
 void swap_val(int a, int b)
 {
+	cout<<"\n C++ function to demonstrate Pass by Value function\n";
 	int t;
 	t=a;
 	a=b;
@@ -117,3 +118,21 @@ void swap_val(int a, int b)
 	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
 }
 
+void swap_ptr(int *a, int *b)
+{
+	cout<<"\n C++ function to demonstrate Pass by Pointer function\n";
+	int temp;
+	temp=*a;
+	*a=*b;
+	*b=temp;
+}
+
+void swap_ref(int &x, int &y)
+{
+   int temp;
+   temp = x; /* save the value at address x */
+   x = y;    /* put y into x */
+   y = temp; /* put x into y */
+
+   return;
+}

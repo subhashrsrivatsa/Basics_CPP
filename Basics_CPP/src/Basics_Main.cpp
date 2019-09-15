@@ -10,13 +10,7 @@
 #include <string.h>
 #include "All_Functions_Definition.hpp"
 
-
 using namespace std;
-
-
-
-
-
 
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
@@ -64,11 +58,19 @@ int main() {
 	cout<<"\n C++ function to demonstrate SWITCH cases\n";
 	studentGrade();
 	cout<<"\n-----------------*******-----------------";
-	cout<<"\n C++ function to demonstrate Pass by Value function\n";
 	int a=10, b=20;
 	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
 	swap_val(a,b);
 	cout<<"\n-----------------*******-----------------";
+	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
+	swap_ptr(&a,&b);
+	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
+	cout<<"\n-----------------*******-----------------";
+	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
+	swap_ref(a, b);
+	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
+	cout<<"\n-----------------*******-----------------";
+
 
 	return 0;
 }
