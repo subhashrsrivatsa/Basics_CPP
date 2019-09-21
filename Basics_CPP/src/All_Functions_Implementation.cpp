@@ -215,3 +215,17 @@ void string_demo()
 	cout<<"\nDestination String : "<<dest;
 
 }
+
+void ptr_demo()
+{
+	int a=10;
+	int* pa=&a;
+	int &b=a;
+	if(a==b)
+	{
+		cout<<"\nThe value of a : "<<a<<" and the value of "<<b<<" stored in : "<<&b<<" are EQUAL\n";
+	}
+	else
+		cout<<a<<" and "<<&b<<" are NOT EQUAL\n";
+}
+

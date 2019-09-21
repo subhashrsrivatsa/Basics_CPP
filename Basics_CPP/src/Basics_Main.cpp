@@ -75,6 +75,9 @@ int main() {
 	cout<<"\n-----------------*******-----------------";
 	cout<<"\nDemonstration of C++ Strings\n";
 	string_demo();
-
+	cout<<"\n-----------------*******-----------------";
+	cout<<"\nDemonstration of Pointers in C++\n";
+	ptr_demo();
+	cout<<"\n-----------------*******-----------------";
 	return 0;
 }
