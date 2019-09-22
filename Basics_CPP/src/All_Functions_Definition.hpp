@@ -22,5 +22,6 @@ void swap_ref(int &x, int &y);
 void matrix_addition();
 void string_demo();
 void ptr_demo();
+void time_demo();
 
 #endif /* ALL_FUNCTIONS_DEFINITION_HPP_ */

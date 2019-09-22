@@ -13,17 +13,17 @@
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	std::string eof ="\n-----------------*******-----------------"; //end of function
 	display();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	Calculator();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	Sizes_Datatypes();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	Characters();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	Area_Circle();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\nFOR loop demonstration in C++\n";
 	cout<<"Enter the number of your choice : ";
 	int n;
@@ -48,36 +48,38 @@ int main() {
 		cout<<n<<"\n";
 	}
 	while(n<=5);
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\n Greatest of 2 Numbers using IF-ELSE loop\n";
 	greatest();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\n C++ function to demonstrate SUM and AVG cases\n";
 	sumnavgint();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\n C++ function to demonstrate SWITCH cases\n";
 	studentGrade();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	int a=10, b=20;
 	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
 	swap_val(a,b);
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
 	swap_ptr(&a,&b);
 	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\nThe values of a and b before swapping : "<<a<<" "<<b;
 	swap_ref(a, b);
 	cout<<"\nThe values of a and b after swapping : "<<a<<" "<<b;
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\nARRAYS in C++:";
 	matrix_addition();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\nDemonstration of C++ Strings\n";
 	string_demo();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
 	cout<<"\nDemonstration of Pointers in C++\n";
 	ptr_demo();
-	cout<<"\n-----------------*******-----------------";
+	cout<<eof;
+	time_demo();
+	cout<<eof;
 	return 0;
 }

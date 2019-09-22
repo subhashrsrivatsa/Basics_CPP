@@ -7,10 +7,13 @@
 #include <iostream>
 #include <string.h>
 #include <cstring>
+#include <ctime>
 
 #include "All_Functions_Definition.hpp"
 
 using namespace std;
+
+const int MAX[10];
 
 void display()
 {
@@ -218,14 +221,37 @@ void string_demo()
 
 void ptr_demo()
 {
+	int var[MAX] = {1,2,3,4,5};
+	int* ptr_array[MAX];
 	int a=10;
 	int* pa=&a;
 	int &b=a;
 	if(a==b)
 	{
-		cout<<"\nThe value of a : "<<a<<" and the value of "<<b<<" stored in : "<<&b<<" are EQUAL\n";
+		cout<<"\nThe value of a : "<<pa<<" and the value of "<<b<<" stored in : "<<&b<<" are EQUAL\n";
 	}
 	else
 		cout<<a<<" and "<<&b<<" are NOT EQUAL\n";
+	for(int i=0;i<MAX;i++){
+		ptr_array[i]=&var;
+	}
+	cout<<"The Array elements displayed using pointers are : \n";
+	for(int i=0; i<MAX;i++){
+		cout<<"Value of var["<<i<<"] is :"<<*ptr_array[i]<<endl;
+	}
+}
+void time_demo()
+{
+	time_t now = time(0);
+		tm* ltm= localtime(&now);
+		char* dt=ctime(&now);
+		cout<<"Year : "<<1900+ltm->tm_year<<endl;
+		cout<<"Month : "<<ltm->tm_mon<<endl;
+		cout<<"Day : "<<ltm->tm_mday<<endl;
+		cout<<"Hour : "<<ltm->tm_hour<<endl;
+		cout<<"Minute : "<<ltm->tm_min<<endl;
+		cout<<"Second : "<<ltm->tm_sec<<endl;
+		cout<<"Current Time using ctime function"<<dt;
+
 }
 
